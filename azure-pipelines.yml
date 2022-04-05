@@ -21,4 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 #Run SonarQube scan and upload results to server
-- task: SonarQubeAnalyze@5
+- task: SonarQubePrepare@5
+  inputs:
+    scannerMode: 'MSBuild'
