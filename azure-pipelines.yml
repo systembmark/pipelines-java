@@ -24,8 +24,8 @@ steps:
 - task: SonarQubePrepare@5
   inputs:
     scannerMode: 'MSBuild'
-#Run Whitesource Bolt code scan
-    - task: WhiteSource@21
-      inputs:
-        cwd: '$(System.DefaultWorkingDirectory)'
-        projectName: 'Test Project'
+#Run Whitesource bolt scan
+- task: WhiteSource@21
+  inputs:
+    cwd: '$(System.DefaultWorkingDirectory)'
+    projectName: 'Test Project 1'
