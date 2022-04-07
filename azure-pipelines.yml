@@ -21,11 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 #Print hello world to the screen 
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello World");
-  }
-}
 #White Source Bolt Scan
 - task: WhiteSource@21
   inputs:
