@@ -25,7 +25,6 @@ public class Main {
   public static void main(String[] args) {
     System.out.println("Hello World, I am a Java App and I don't do much, I'm just for testing and stuff!");
   }
-}
 #Run Whitesource bolt scan
 - task: WhiteSource@21
   inputs:
